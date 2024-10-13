@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb Color</title>
+    <style>
+        body{
+            background-color:  #dcdcf0;
+        }
+        .container{
+            border: double;
+            margin: 20px auto;
+            width: 400px;
+            background-color: #fbfbfc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #bulb{
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+        }
+        .bulb-heading{
+            color: rgb(14, 12, 12);
+            text-align: center;
+        }
+        .btn{
+            border: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-main{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .btn-Yellow{
+            background-color: rgb(245, 245, 48);
+        }
+        .btn-Blue{
+            background-color: rgb(13, 11, 131);
+            color: rgb(252, 249, 249);
+        }
+        .btn-Green{
+            background-color: rgb(7, 243, 46);
+        }
+        .btn-Pink{
+            background-color: rgb(245, 30, 191);
+        }
+        .btn-Tomato{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body id="body">
+<div class="container" id="container">
+        <h1 class="bulb-heading" id="bulb-heading">Bulb Color</h1>
+        <img src="lightbulb.png" alt="bulb" id="bulb">
+
+    <div class="btn-main">
+        <button class="btn btn-Blue" onclick="Blue()">Blue</button>
+        <button class="btn btn-Yellow" onclick="Yellow()">Yellow</button>
+        <button class="btn btn-Green" onclick="Green()">Green</button>
+        <button class="btn btn-Pink" onclick="Pink()">Pink</button>
+        <button class="btn btn-Tomato" onclick="Tomato()">Tomato</button>
+    </div>
+</div>
+    <script>
+        function Yellow()
+        {
+            const bulbImageElement = document.getElementById ('bulb');
+            bulbImageElement.src = 'lightbulb.png';
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#ffff99';
+
+            const containerElement = document.getElementById ('container');
+            containerElement.style.backgroundColor = '#ffff00';
+
+            const headingElement = document.getElementById ('bulb-heading');
+            headingElement.style.color = 'black';
+        }
+        function Blue()
+        {
+            const bulbImageElement = document.getElementById ('bulb');
+            bulbImageElement.src = 'lightbulb.png';
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#9999ff';
+
+            const containerElement = document.getElementById ('container');
+            containerElement.style.backgroundColor = '#3333ff';
+
+            const headingElement = document.getElementById ('bulb-heading');
+            headingElement.style.color = 'white';
+        }
+        function  Green()
+        {
+            const bulbImageElement = document.getElementById ('bulb');
+            bulbImageElement.src = 'lightbulb.png';
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#99ff99';
+
+            const containerElement = document.getElementById ('container');
+            containerElement.style.backgroundColor = '#00cc00';
+
+            const headingElement = document.getElementById ('bulb-heading');
+            headingElement.style.color = 'white';
+        }
+        function Pink()
+        {
+            const bulbImageElement = document.getElementById ('bulb');
+            bulbImageElement.src = 'lightbulb.png';
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#ffc0cb';
+
+            const containerElement = document.getElementById ('container');
+            containerElement.style.backgroundColor = '#ff4d6a';
+
+            const headingElement = document.getElementById ('bulb-heading');
+            headingElement.style.color = 'black';
+        }
+        function Tomato()
+        {
+            const bulbImageElement = document.getElementById ('bulb');
+            bulbImageElement.src = 'lightbulb.png';
+
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#ff674d';
+
+            const containerElement = document.getElementById ('container');
+            containerElement.style.backgroundColor = '#ff2600';
+
+            const headingElement = document.getElementById ('bulb-heading');
+            headingElement.style.color = 'white';
+        }
+    </script>
+</body>
+</html>
